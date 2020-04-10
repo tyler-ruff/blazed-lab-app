@@ -10,4 +10,5 @@ Bulma & JQuery are the only external dependancies used.
 # Use?
 You are free to use this code for whatever you like, it surely is not the first of its kind xD
 
-https://blazed.space/
+# DEMO
+https://blazed.space/labs/
