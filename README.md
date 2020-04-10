@@ -1,5 +1,5 @@
 # blazed-lab-app
-A painless self-served code playground for HTML, CSS, JS
+A painless self-served code playground for HTML, CSS, JS.
 
 # How do I install this?
 Just drag-and-drop, no server no nothing!
