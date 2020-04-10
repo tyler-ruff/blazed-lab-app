@@ -1,0 +1,18 @@
+{
+  "name": "blazed-code-playground",
+  "version": "1.0.0",
+  "description": "An HTML, CSS, and Javascript playground.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blazed",
+    "playground"
+  ],
+  "author": "Blazed Labs LLC",
+  "license": "ISC",
+  "dependencies": {
+    
+  }
+}

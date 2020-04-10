@@ -1,0 +1,80 @@
+<!doctype html><html lang="en" dir="ltr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blazed Labs Playground</title><meta name="description" content="Free code playground hosted by Blazed Labs.">
+<link rel="stylesheet" href='css/bulma.min.css' />
+<style>
+	a,a:visited{color:#bf4342}::selection{background:#6D213C;color:#E3C16F}::-moz-selection{background:#6D213C;color:#E3C16F}textarea{overflow:auto;width:50%;max-width:50%;min-height:350px;resize:vertical;outline-style:none;box-shadow:none;border-color:transparent;background:rgba(0,0,0,0.79);color:#FFF;padding:10px;padding-left:20px;padding-right:20px;border:3px solid rgba(0,0,0,0.5)}textarea:active,textarea:focus{background:rgba(0,0,0,0.83)}hr{border:0;border-top:1px solid #bf4342}nav div ul{margin-bottom:-1px}.is-active{border:1px solid #bf4342;color:#E3C16F;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0}.is-active a span{color:#bf4342}.tab-content.current{display:inherit}#content{border:1px solid #bf4342;overflow:auto;padding-bottom:20px}#output-box{margin-top:-20px}#output-box h2{margin-bottom:-10px;text-align:center}textarea,#output-box{height:350px}.tab-content{display:none;padding:15px}.current{display:block}#iFrame{padding:0;margin:-20px;padding-left:20px;padding-right:20px}
+</style>
+<!-- 
+	Blazed Code Labs (c) 2020
+	You MAY remove this warning if you like, but it will be shipped with all versions of this program.
+	https://blazed.space/
+		-	What is this?
+			This is Blazed Code Labs, a free distributed code playground application.
+		-	Who is Blazed Labs?
+			We are a small startup based out of Ocean City, New Jersey.
+			The code for this website was created using the Blazed Development Process,
+			a process that anyone can use to help make the internet more accessable, fast, and effective.
+	Github (blz process): https://github.com/blazed-labs/blz
+	Github (blazed labs): https://github.com/blazed-labs/blz-lab-app
+-->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#bf4342">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#bf4342">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+	<header class="container hero">
+	  <div class="hero-body">
+		<div class="container">
+		  <h1 class="title">Code Lab</h1>
+		  <h2 class="subtitle">HTML5/CSS/JS</h2>
+		</div>
+	  </div>
+	</header>
+	<nav class="container">
+		<div class="tabs is-boxed">
+		  <ul>
+			<li class="is-active" data-tab="tab-html"><a><span>HTML</span></a></li>
+			<li data-tab="tab-css"><a><span>CSS</span></a></li>
+			<li data-tab="tab-js"><a><span>JS</span></a></li>
+		  </ul>
+		</div>
+	</nav>
+	<main class="container" id="content">
+		<div id="tabContent">
+			<div class="tab-content current" id="tab-html"><textarea style="float:left" id="htmlTextarea"></textarea></div>
+			<div class="tab-content" id="tab-css"><textarea style="float:left" id="cssTextarea"></textarea></div>
+			<div class="tab-content" id="tab-js"><textarea style="float:left" id="jsTextarea"></textarea></div>
+			</div>
+			<div id="output-box">
+			<h2>Output</h2>
+			<hr />
+			<output><iframe id="iFrame"></iframe></output>
+		</div>
+	</main>
+	<footer class="footer">
+	  <div class="content has-text-centered">
+		<div><button class="is-small" id="downloadLink">Download Current Playground</button></div>
+		<br />
+		<p><strong>Blazed Code Labs</strong> by <a href="https://blazed.space">Blazed Labs LLC</a></p>
+	  </div>
+	</footer>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/editor.min.js"></script>
+</body></html>
